@@ -5,43 +5,46 @@ body{
     justify-content: space-between;
     align-items: center;
     margin:0; /* trying to get the box to fill the screen */
-    width: 100%;
 }
 
 .first-container{
-    flex: 1 1 auto;
-    background-color: #1F2937;
-    color:white;
-}
-
-.header{
-    display:flex;
-    justify-content: space-between;
-    padding:20px 50px; /*still don't know how to get blue to fill screen width */
-}
-
-.logo{
-    font-size: 24px;
-    font-weight:bolder; /* or should it just be bold? */
-    color: #F9FAF8;
-}
-.first-content-container{
     display: flex;
-    padding:50px;
-    gap: 50px;
+    justify-content: space-between;
+    background-color: #1f2937;
+    width:100%;
+}
+.first-container-left, .first-container-right{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top:50px;
+    margin-bottom: 80px;
+    width: 600px;
+    border-color: white;
+    border-style: solid;
 }
 
-.box-with-text{
-    width: 400px;
+.first-container-left{
+margin-left: 100px;
+} 
+.first-container-right{
+    margin-right: 100px;
 }
 
 .placeholder{
+    align-self:center;
     background-color: gray;
+    box-sizing: border-box;
+    width: 400px;
+    height: 200px;
+    padding:100px;
 }
 
 ul{
     display:flex;
     list-style-type: none;
+    justify-content: flex-end;
     margin:0;
     padding:0;
     gap: 25px;
@@ -53,7 +56,11 @@ a{
 
 }
 
-.main-text{
+.logo{
+    color: #f9faf9;
+}
+.hero-text{
+    color: #f9faf9;
     font-size:48px;
     font-weight:bolder;
 }
@@ -61,6 +68,7 @@ a{
 .subtext{
     font-size: 18px;
     color:#E5E7EB;
+    margin-bottom: 12px;
 }
 
 button{
@@ -69,5 +77,5 @@ button{
     font-weight:bold;
     border-radius: 8px;
     border-style: none;
-    padding: 5px 24px;
+    padding: 8px 24px;
 }
