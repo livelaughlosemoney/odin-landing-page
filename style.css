@@ -4,31 +4,33 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin:0; /* trying to get the box to fill the screen */
-    width: 100%;
+    margin:0;
 }
 
 .first-container{
     flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #1F2937;
     color:white;
+    margin:0; 
+    width: 100%;
 }
 
-.header{
+.header, .first-content-container{
     display:flex;
     justify-content: space-between;
-    padding:20px 50px; /*still don't know how to get blue to fill screen width */
+    margin-right:425px;
+    margin-left:425px;
+    margin-top:20px;
+    margin-bottom:80px;
+    width:100%;
 }
 
 .logo{
     font-size: 24px;
     font-weight:bolder; /* or should it just be bold? */
     color: #F9FAF8;
-}
-.first-content-container{
-    display: flex;
-    padding:50px;
-    gap: 50px;
 }
 
 .box-with-text{
@@ -37,6 +39,7 @@ body{
 
 .placeholder{
     background-color: gray;
+    padding:100px 80px;
 }
 
 ul{
@@ -61,6 +64,7 @@ a{
 .subtext{
     font-size: 18px;
     color:#E5E7EB;
+    margin-bottom:10px;
 }
 
 button{
@@ -70,4 +74,8 @@ button{
     border-radius: 8px;
     border-style: none;
     padding: 5px 24px;
+}
+
+.second-container{
+    text-align:center;
 }
