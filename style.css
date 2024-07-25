@@ -8,7 +8,6 @@ body{
 }
 
 .first-container{
-    flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
     background-color: #1F2937;
@@ -78,4 +77,72 @@ button{
 
 .second-container{
     text-align:center;
+}
+
+.second-container.hero-text{
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1F2937;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.second-container .card-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:40px;
+    margin-bottom:80px;
+}
+
+.second-container .card-container,.second-container.hero-text {
+    margin-right:425px;
+    margin-left:425px;
+}
+.card.text{
+    width:150px;
+}
+
+#first-image, #second-image, #third-image, #fourth-image{
+    border-color:#3882F6;
+    border-style: solid;
+    height:150px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+.third-container{
+    background-color: #E5E7EB;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.quote, .thor{
+    margin-left:600px;
+    margin-right:600px;
+    width: 100%;
+    color: #1F2937;
+}
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 100px;
+    margin-bottom:10px;
+}
+
+.thor{
+    margin-top:0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:100px;
+    text-align:right;
+}
+
+.footer{ /* not done yet. got lazy */
+    text-align: center;
+    background-color: #1F2937;
+    color:white;
+    width: 100%;
+    padding: 30px 80px;
 }
