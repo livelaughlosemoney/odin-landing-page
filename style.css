@@ -19,8 +19,8 @@ body{
 .header, .first-content-container{
     display:flex;
     justify-content: space-between;
-    margin-right:425px;
-    margin-left:425px;
+    margin-right:300px;
+    margin-left:300px;
     margin-top:20px;
     margin-bottom:80px;
     width:100%;
@@ -72,7 +72,7 @@ button{
     font-weight:bold;
     border-radius: 8px;
     border-style: none;
-    padding: 5px 24px;
+    padding: 8px 24px;
 }
 
 .second-container{
@@ -100,6 +100,7 @@ button{
 }
 .card.text{
     width:150px;
+    color:#1F2937;
 }
 
 #first-image, #second-image, #third-image, #fourth-image{
@@ -118,8 +119,8 @@ button{
 }
 
 .quote, .thor{
-    margin-left:600px;
-    margin-right:600px;
+    margin-left:400px;
+    margin-right:400px;
     width: 100%;
     color: #1F2937;
 }
@@ -139,10 +140,43 @@ button{
     text-align:right;
 }
 
-.footer{ /* not done yet. got lazy */
+.footer{ 
     text-align: center;
     background-color: #1F2937;
     color:white;
     width: 100%;
     padding: 30px 80px;
+}
+
+.fourth-container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.fourth-container .sub-container{
+    background-color: #3882F6;
+    display:flex;
+    justify-content: space-between;
+    margin: 100px 50px;
+    padding:50px 100px;
+    border-radius: 10px;
+    gap:175px;
+}
+
+.title{
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.text{
+    font-size: 16px;
+    color: #F9FAF8;
+    font-weight:lighter;
+}
+
+.fourth-container .sign-up{
+    border-color: #F9FAF8;
+    border-style: solid;
 }
